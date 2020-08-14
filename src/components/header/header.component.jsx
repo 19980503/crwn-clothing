@@ -11,6 +11,7 @@ const Header = () => (
         <Link className='logo-container' to="/">
           <Logo className='logo'/>
         </Link>
+        <div style={{display: 'flex'}}>
         <div className='options'>
            <Link className='option' to='/shop'>
            SHOP
@@ -21,6 +22,8 @@ const Header = () => (
            <Link className='option' to='/shop'>
            CONTACT
            </Link>
+        </div>
+
         </div>
     </div>
 )
