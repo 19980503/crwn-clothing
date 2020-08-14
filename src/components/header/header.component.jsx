@@ -11,10 +11,16 @@ const Header = () => (
         <Link className='logo-container' to="/">
           <Logo className='logo'/>
         </Link>
-        <div style={{display: 'flex'}}>
+        <div style={{display: 'flex' }}>
         <div className='options'>
            <Link className='option' to='/shop'>
            SHOP
+           </Link>
+        </div>
+
+        <div className='options'>
+           <Link className='option' to='/shop'>
+           SIGNIN
            </Link>
         </div>
 
