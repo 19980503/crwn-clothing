@@ -4,6 +4,8 @@ import FormInput from '../form-input/form-input.component';
 
 import CustmButton from '../custom-button/custom-button.component'
 
+import {signInWithGoogle} from '../../firebase/firebase.utils'
+
 import './sign-in.styles.scss';
 
 
@@ -43,15 +45,21 @@ render(){
         label="Email" 
         required/>
 
-        <FormInput 
+        <FormInput  
         name='password' 
         handleChange={this.handleChange} 
         type='password' 
         value={this.state.password} 
         label="Password" 
         required/>
-       
+
+        <div className='buttons'> 
         <CustmButton type='submit'> Sign in</CustmButton> 
+        <span>
+        <CustmButton onClick = {signInWithGoogle} isGoogleSignIn> {' '} Sign in with Google {' '}</CustmButton>
+        </span>
+         
+        </div>
         </form>
         </div>
     )
